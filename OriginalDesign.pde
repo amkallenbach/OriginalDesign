@@ -3,6 +3,7 @@ void setup()
   size(520,600);
 }
 void draw() {
+	background(235,156,177);
 // katamari head
 noStroke();
 fill(151,203,76); //base green
@@ -31,8 +32,18 @@ arc(260, 175, 40, 50, 0,PI);
 //body
 fill(151,203,76); //base green
 quad(200, 225, 150, 400, 375, 400, 325, 225);
-
-
+fill(50,174,77); //bottom trim
+rect(150,400,225,15,15);
+//crazy arms
+stroke(151,203,76); //base green
+strokeWeight(30);
+line(200,255,mouseX,mouseY);
+line(325,255,mouseX + 100, mouseY + 100);
+//crazy legs
+stroke(149,56,147);
+strokeWeight(30);
+line(200,400,mouseX,mouseY);
+line(325,400,mouseX + 100, mouseY + 100);
 }
 
 
